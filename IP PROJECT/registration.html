@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOD BANK MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="style/login.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: url('https://subangjayamedicalcentre.com/storage/app/media/Health-Insights/45840451_l-1.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 50px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        input[type="text"],
+        input[type="numbers"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff4c4c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #ff1a1a;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>Registration</h2>
+        <form action="index.html" method="post">
+            <label for="r1" id="f_n">Full name</label>
+            <input type="text" name="fullname" id="r1" placeholder="Fullname" required><br>
+
+            <label for="r2" id="Gender">Gender</label>
+            <input type="text" name="Gender" id="r2" placeholder="Gender" required><br>
+
+            <label for="r3" id="age_weight">Age & Weight</label>
+            <input type="text" name="age_weight" id="r3" placeholder="Age & Weight" required><br>
+
+            <label for="r4" id="p_n">Phone number</label>
+            <input type="numbers" name="Pno" id="r4" placeholder="Phone number" required><br>
+
+            <label for="r5" id="group">Blood group</label>
+            <input type="text" name="bloodgroup" id="r5" placeholder="Blood group" required><br>
+
+            <label for="r6" id="lastdonateddate">Last donated date</label>
+            <input type="text" name="lastdonateddate" id="r6" placeholder="Last donated date" required><br>
+
+            <button type="submit" value="submit" id="button" onclick="alert('Registration is successful')">Register</button>
+        </form>
+        <div class="login-link">
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </center>
+</body>
+</html>

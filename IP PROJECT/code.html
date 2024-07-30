@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Blood Bank Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: url('https://subangjayamedicalcentre.com/storage/app/media/Health-Insights/45840451_l-1.jpg') no-repeat center center fixed; 
+            background-size: cover;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 100px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff4c4c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #ff1a1a;
+        }
+
+        .login-link {
+            margin-top: 20px;
+        }
+
+        .login-link a {
+            color: #ff4c4c;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>SIGN UP</h2>
+        <form action="index.html" method="post">
+            <label for="r1" id="u_n">Username</label>
+            <input type="text" name="username" id="r1" placeholder="username" required><br><br>
+            <label for="r3" id="email">Email</label>
+            <input type="email" name="email" id="r3" placeholder="email" required><br><br>
+            <label for="r2" id="password">Password</label>
+            <input type="password" name="password" id="r2" required><br><br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </center>
+    <div class="login-link">
+        <center>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </center>
+    </div>
+</body>
+</html>
